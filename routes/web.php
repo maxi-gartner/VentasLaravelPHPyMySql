@@ -14,4 +14,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 //Route::get('/', function () { return view('admin'); });
 
 
-Route::get('/', [App\Http\Controllers\UsersReadController::class, 'index'])->name('home')->middleware('auth');
+Route::get('/', [App\Http\Controllers\UsersReadController::class, 'index'])->name('admin.index')->middleware('auth');
