@@ -98,7 +98,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                Starter Pages
+                Control de Stock
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
