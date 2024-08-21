@@ -237,20 +237,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </li>
             </ul>
           </li>
-          <li class="nav-item">
+          <li class="nav-item {{ Request::is('users*') ? 'menu-open' : '' }}">
             <a href="#" class="nav-link">
                 <i class="nav-icon fa fa-users"></i>
-              <p>Gestión de Usuarios <i class="right fas fa-angle-left"></i></p>
+                <p>Gestión de Usuarios <i class="right fas fa-angle-left"></i></p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link active">
+              <a href="{{url('usersList')}}" class="nav-link {{ Request::is('usersList') ? 'active' : '' }}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Lista de Usuarios</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+              <a href="{{url('usersRoles')}}" class="nav-link {{ Request::is('usersRoles') ? 'active' : '' }}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Roles y Permisos </p>
                 </a>

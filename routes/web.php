@@ -6,4 +6,5 @@ Route::get('/', function () {return view('welcome');})->name('home');
 
 Auth::routes();
 
-Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('administrador');
+Route::get('/usersList', [App\Http\Controllers\UsersController::class, 'List'])->name('Administración de usuarios');
+Route::get('/usersRoles', [App\Http\Controllers\UsersRolesController::class, 'Roles'])->name('Administración de usuarios');
